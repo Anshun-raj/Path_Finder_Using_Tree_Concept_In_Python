@@ -34,7 +34,7 @@ class Main_path:
     def get_path(self):
         for i in range(len(Main_path.lis1)):
             if Main_path.lis1[i] == Main_path.dest:
-                print("You ca choose this path")
+                print("You can choose this path")
                 break
         else:
             print("There is no route available for your destination")
