@@ -21,12 +21,14 @@ class Main_path:
         direction=space+"|-->" if self.initial_path else ""
         print(direction+self.path)
         if self.child_path:
+
             for new_path in self.child_path:
+                Main_path.lis1.append(new_path)
                 new_path.print_path()
 
     def add_path(self,new_path):
         new_path.initial_path=self
-        Main_path.lis1.append(new_path)
+        
         self.child_path.append(new_path)
 
     def get_path(self):
